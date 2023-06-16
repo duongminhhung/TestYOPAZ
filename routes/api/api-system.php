@@ -5,20 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ApiSystemController;
 use App\Models\department;
 use Illuminate\Http\Request;
-
-
-Route::get('export-stock',[ApiSystemController::class, 'export_stock']);
-Route::get('create-command-export-materials',[ApiSystemController::class, 'create_command_export_materials']);
-Route::get('select-materials',[ApiSystemController::class, 'select_material']);
-Route::get('get-data-materials-location',[ApiSystemController::class, 'get_data_materials_location']);
-Route::get('get_materials_function',[ApiSystemController::class, 'get_materials_function']);
-
-Route::get('chart-api',[ApiSystemController::class, 'chart_api']);
-Route::get('chart-api-2',[ApiSystemController::class, 'chart_api_2']);
-
-Route::get('read-file-mishin-shiage',[ApiSystemController::class, 'read_file_mishin_shiage']);
-
-use App\Models\Singer;
 use App\Models\student;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
